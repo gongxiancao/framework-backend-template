@@ -1,0 +1,35 @@
+{
+  "name": "backend-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "1.5.2",
+    "framework": "gongxiancao/framework",
+    "framework-config": "gongxiancao/framework-config",
+    "framework-controller": "gongxiancao/framework-controller",
+    "framework-env": "gongxiancao/framework-env",
+    "framework-model": "gongxiancao/framework-model",
+    "framework-seneca": "gongxiancao/framework-seneca",
+    "framework-seneca-route": "gongxiancao/framework-seneca-route",
+    "framework-service": "gongxiancao/framework-service",
+    "lodash": "4.5.0",
+    "seneca-amqp-transport": "^0.2.0"
+  },
+  "devDependencies": {
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-jshint": "^2.0.0",
+    "gulp-load-plugins": "^1.2.0",
+    "gulp-util": "^3.0.7",
+    "jshint": "^2.9.1",
+    "jshint-stylish": "^2.1.0",
+    "require-dir": "^0.3.0",
+    "through": "^2.3.8"
+  }
+}
