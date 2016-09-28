@@ -1,5 +1,5 @@
 {
-  "name": "backend-template",
+  "name": "framework-backend-template",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "async": "1.5.2",
+    "bluebird": "^3.4.6",
     "framework": "gongxiancao/framework",
     "framework-config": "gongxiancao/framework-config",
     "framework-controller": "gongxiancao/framework-controller",
@@ -19,17 +20,26 @@
     "framework-seneca-route": "gongxiancao/framework-seneca-route",
     "framework-service": "gongxiancao/framework-service",
     "lodash": "4.5.0",
-    "seneca-amqp-transport": "^0.2.0"
+    "operational-error": "gongxiancao/operational-error",
+    "seneca-amqp-transport": "^0.2.0",
+    "winston": "^2.2.0"
   },
   "devDependencies": {
     "del": "^2.2.0",
     "gulp": "^3.9.1",
+    "gulp-cucumber": "0.0.18",
     "gulp-jshint": "^2.0.0",
     "gulp-load-plugins": "^1.2.0",
+    "gulp-nodemon": "^2.0.6",
+    "gulp-spawn-mocha": "^3.0.0",
     "gulp-util": "^3.0.7",
     "jshint": "^2.9.1",
     "jshint-stylish": "^2.1.0",
+    "merge-stream": "^1.0.0",
+    "mocha": "^3.0.1",
     "require-dir": "^0.3.0",
+    "run-sequence": "^1.1.5",
+    "should": "^10.0.0",
     "through": "^2.3.8"
   }
 }

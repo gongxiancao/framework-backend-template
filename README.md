@@ -1,11 +1,22 @@
 # Error Codes
 
+Before start for the first time, run:
+```
+npm install
+gulp migrate:up
+```
 
-| Code | Description |
-| ----- | ----------  |
-| -1    | system busy, retry later |
-| 0     | success     |
-| 1     | internal error, contact us |
-| 41001 | failed to create app, contact us |
-| 41002 | failed to get app, contact us |
-| 41003 | app not exist |
+To start the server, run:
+```
+gulp
+```
+
+To migrate production db, run:
+```
+host=$host user=$user project=framework-backend-template env=production target=Prod command=migrate-product bash devops.sh
+```
+
+To deploy to production, run:
+```
+host=$host user=$user project=framework-backend-template env=production target=Prod command=deploy-product bash devops.sh
+```
