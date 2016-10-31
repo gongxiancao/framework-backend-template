@@ -52,7 +52,7 @@
     "predef"        : [
         "_",
         "async",
-        "framework",
+        "ofa",
         "logger",
         "Errors",
         "News"

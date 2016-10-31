@@ -1,15 +1,15 @@
 'use strict';
 process.chdir(__dirname);
-var framework = require('framework')(); // jshint ignore:line
+var ofa = require('ofa')(); // jshint ignore:line
 
-module.exports = framework
-.use('framework-env')
-.use('framework-config')
-.use('framework-model')
-.use('framework-service')
-.use('framework-controller')
-.use('framework-seneca')
-.use('framework-seneca-route')
+module.exports = ofa
+.use('ofa-env')
+.use('ofa-config')
+.use('ofa-model')
+.use('ofa-service')
+.use('ofa-controller')
+.use('ofa-seneca')
+.use('ofa-seneca-route')
 .lift()
 .listen()
 .on('error', function (err) {
@@ -32,7 +32,7 @@ module.exports = framework
                                                       \n\
                                                       \n\
 ======================================================\n\
-Framework-backend-template started, env=' + framework.environment);
+Framework-backend-template started, env=' + ofa.environment);
 });
 
 
