@@ -1,15 +1,15 @@
 'use strict';
 process.chdir(__dirname);
-var ofa = require('ofa')(); // jshint ignore:line
+var framework = require('ofa')(); // jshint ignore:line
 
-module.exports = ofa
-.use('ofa-env')
-.use('ofa-config')
-.use('ofa-model')
-.use('ofa-service')
-.use('ofa-controller')
-.use('ofa-seneca')
-.use('ofa-seneca-route')
+module.exports = framework
+.use('env')
+.use('config')
+.use('model')
+.use('service')
+.use('controller')
+.use('seneca')
+.use('seneca-route')
 .lift()
 .listen()
 .on('error', function (err) {
